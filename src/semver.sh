@@ -3,6 +3,6 @@
 
 message=$(git log --format=%B -n 1 <commit>)
 
-echo "$messsage"
+echo "MESSAGE: $messsage"
 
 
