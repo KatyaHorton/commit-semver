@@ -1,6 +1,6 @@
 #!/bin/bash
 
-message="miay"
+message='miay'
 echo "START: ${messsage} END"
 
 
