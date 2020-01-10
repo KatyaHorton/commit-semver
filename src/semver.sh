@@ -1,6 +1,6 @@
 #!/bin/bash
 
 message=$(git log)
-echo "START: $messsage END"
+echo "START: ${messsage} END"
 
 
