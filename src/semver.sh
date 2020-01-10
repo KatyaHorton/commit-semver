@@ -1,6 +1,7 @@
 #!/bin/bash
+  
+MESSAGE=$(git log -1 HEAD --pretty=format:%s)
+echo "START: $MESSAGE END"
 
-message='miay'
-echo "START: ${messsage} END"
 
 
