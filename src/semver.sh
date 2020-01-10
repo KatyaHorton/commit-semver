@@ -1,5 +1,7 @@
 #!/bin/bash
 
-let commitmessage = `git log --pretty='format:%Creset%s' --no-merges -1`
+
+# COMMIT_MESSAGE = 
 # read -p 'who is it? ' gitcommit
-echo "$commitmessage"
+git log --pretty='format:%Creset%s' --no-merges -1
+echo "Message was: " 
