@@ -1,0 +1,17 @@
+{
+  "name": "commit-semver",
+  "version": "1.0.0",
+  "description": "Automated SemVer with Conventional Commits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "semver",
+    "cnventional",
+    "commit",
+    "version"
+  ],
+  "author": "Katya Horton",
+  "license": "ISC"
+}
