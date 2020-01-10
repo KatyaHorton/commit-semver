@@ -8,7 +8,6 @@ if [ "$MESSAGE" == 'feat' ]
     else 
         echo "IS NOT"
 fi
-
 echo "START: $MESSAGE END"
 
 
