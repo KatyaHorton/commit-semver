@@ -1,6 +1,6 @@
 #!/bin/bash
 
-message="$(ls -1)"
+message="miay"
 echo "START: ${messsage} END"
 
 
