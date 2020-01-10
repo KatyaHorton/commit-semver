@@ -1,8 +1,8 @@
 #!/bin/bash
 
+message=$(git status 2>&1)
 
-message=$(git log --format=%B -n 1 <commit>)
 
-echo "MESSAGE: $messsage"
+echo "MESSAGE: $messsage YEP"
 
 
