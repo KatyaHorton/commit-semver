@@ -8,7 +8,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "src/semver.sh"
+      "commit-msg": "src/semver.sh"
       }
     },
   "keywords": [
