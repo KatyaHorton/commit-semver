@@ -2,7 +2,7 @@
   
 MESSAGE=$(git log -1 HEAD --pretty=format:%s)
 
-if[ "$MESSAGE" == 'feat' ]
+if [ "$MESSAGE" == 'feat' ]
     then 
         echo "Is feat"
     else 
