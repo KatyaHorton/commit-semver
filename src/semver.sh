@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 COMMIT_MESSAGE = ${git log --pretty='format:%Creset%s' --no-merges -1}
 if [COMMIT_MESSAGE == 'feat'] 
 then
