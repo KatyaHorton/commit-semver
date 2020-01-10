@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Message was: " ${git log --format=%B -n 1 <commit>}
+
+echo ${git log}
+# COMMIT_MESSAGE = ${git log}
 # if [COMMIT_MESSAGE == 'feat'] 
 # then
 #     npm version patch
