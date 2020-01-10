@@ -5,9 +5,9 @@ MESSAGE=$(git log -1 HEAD --pretty=format:%s)
 
 if [ "$MESSAGE" == 'feat' ]
     then 
-        echo "Is feat"
+        echo "Is feat $MESSAGE"
     else 
-        echo "IS NOT"
+        echo "$MESSAGE IS NOT feat"
 fi
 echo "START: $MESSAGE END"
 
