@@ -24,7 +24,4 @@ echo ${names[$i]}
         then   echo 'patch'
  fi
         # then  npm version patch echo 'patch'
-
-
-
 done
