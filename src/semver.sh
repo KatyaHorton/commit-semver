@@ -15,13 +15,15 @@ do
 echo ${names[$i]}
   COMMIT_MESSAGE=${names[$i]}
     if [ "${COMMIT_MESSAGE}" == *'BREAKING CHANGES'* ];
-        then  ${npm version major}  
+        then   echo 'major' 
+        # then  npm version major echo 'major' 
     elif [ "${COMMIT_MESSAGE}" == *'feat'* ];
-        then  $(npm version minor)
+        then   echo 'minor'
+        # then  npm version minor echo 'minor'
     elif [ "${COMMIT_MESSAGE}" == *'fix'* ];
-        then  npm version patch
+        then   echo 'patch'
  fi
 
-   npm version patch 
-   
+
+
 done
