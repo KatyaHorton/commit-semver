@@ -12,13 +12,21 @@ IFS=$SAVEIFS   # Restore IFS
 
 for (( i=0; i<${#names[@]}; i++ ))
 do 
-if [${names[$i]} == 'feat']
- then echo "Add patch"
-elif [${names[$i]} == 'not feat']
- then echo "Add minor"
-elif [${names[$i]} == 'not feat']
- then echo "Add major"
-fi
+echo ${names[$i]}
+  COMMIT_MESSAGE=${names[$i]}
+    if [ "${COMMIT_MESSAGE}" == *'BREAKING CHANGES'* ];
+        then  echo 'MAJOR Version'
+    elif ["${COMMIT_MESSAGE}" == *'feat'* ];
+        then echo 'MINOR version'
+    elif ["${COMMIT_MESSAGE}" == *'fix'* ];
+        then echo 'PATCH version'
+ fi
+# elif [${names[$i]} == 'not feat']
+#  then echo "Add minor"
+# elif [${names[$i]} == 'BREAKING CHANGES']
+#  then echo "Add major"
+#  else echo "Not affecting version"
+# fi
      
 done
 
