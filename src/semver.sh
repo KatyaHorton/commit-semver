@@ -16,7 +16,8 @@ echo ${names[$i]}
         then   echo 'major' 
         # then  npm version major echo 'major' 
     elif [ "${COMMIT_MESSAGE}" == *'feat'* ];
-        then   echo 'minor'
+        then  npm version minor  echo 'minor'
+        
         # then  npm version minor echo 'minor'
     elif [ "${COMMIT_MESSAGE}" == 'fix commit' ];
         then   npm version patch 
