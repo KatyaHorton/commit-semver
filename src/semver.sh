@@ -16,31 +16,10 @@ echo ${names[$i]}
   COMMIT_MESSAGE=${names[$i]}
     if [ "${COMMIT_MESSAGE}" == *'BREAKING CHANGES'* ];
         then  echo 'MAJOR Version'
-    elif ["${COMMIT_MESSAGE}" == *'feat'* ];
+    elif [ "${COMMIT_MESSAGE}" == *'feat'* ];
         then echo 'MINOR version'
-    elif ["${COMMIT_MESSAGE}" == *'fix'* ];
+    elif [ "${COMMIT_MESSAGE}" == *'fix'* ];
         then echo 'PATCH version'
  fi
-# elif [${names[$i]} == 'not feat']
-#  then echo "Add minor"
-# elif [${names[$i]} == 'BREAKING CHANGES']
-#  then echo "Add major"
-#  else echo "Not affecting version"
-# fi
      
 done
-
-
-# if [ "$MESSAGE" == 'feat' ]
-#     then 
-#         echo "Is feat $MESSAGE"
-#     else 
-#         echo "$MESSAGE IS NOT feat"
-# fi
-# echo "$MESSAGES"
-# echo "${y}"
-# echo "${y[1]}"
-# echo "${y[2]}"
-
-
-
