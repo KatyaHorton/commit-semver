@@ -3,8 +3,6 @@
 
 MESSAGES=$(git log origin/master..master --pretty=format:%s)
 
-
-
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
 names=($MESSAGES) # split to array $names
