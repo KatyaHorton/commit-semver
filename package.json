@@ -1,6 +1,6 @@
 {
   "name": "commit-semver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automated SemVer with Conventional Commits",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-push":  "sh src/semver.sh"
-      }
-    },
+      "pre-push": "sh src/semver.sh"
+    }
+  },
   "keywords": [
     "semver",
     "cnventional",
