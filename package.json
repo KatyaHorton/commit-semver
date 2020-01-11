@@ -1,6 +1,6 @@
 {
   "name": "commit-semver",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Automated SemVer with Conventional Commits",
   "main": "index.js",
   "scripts": {
