@@ -21,5 +21,6 @@ echo ${names[$i]}
     elif [ "${COMMIT_MESSAGE}" == *'fix'* ];
         then   echo 'patch'
  fi
+   
         # then  npm version patch echo 'patch'
 done
