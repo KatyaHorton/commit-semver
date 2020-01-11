@@ -13,7 +13,7 @@ do
 echo ${names[$i]}
   COMMIT_MESSAGE=${names[$i]}
     if [ "${COMMIT_MESSAGE}" == 'BREAKING CHANGES' ];
-        then   echo 'major' 
+        then  npm version major
         # then  npm version major echo 'major' 
     elif [ "${COMMIT_MESSAGE}" == 'feat' ];
         then  npm version minor  
